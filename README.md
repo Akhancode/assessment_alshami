@@ -7,7 +7,8 @@ NestJS serving Ionic React app -
 ## take a pull of this Repo  and change directory
 
 ```bash
-$cd git clone https://github.com/Akhancode/assessment_alshami.git
+$git clone https://github.com/Akhancode/assessment_alshami.git
+
 $cd assessment_alshami
 
 ```
