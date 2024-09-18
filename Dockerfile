@@ -7,21 +7,14 @@ FROM node:18-alpine
 WORKDIR /app
 
 # Copy package.json and package-lock.json files to install dependencies
-COPY package*.json ./
-
-ENV NODE_ENV production
-
+COPY . .
 # Install dependencies
 RUN npm install
 
-# Copy the entire NestJS app into the container
-COPY . .
 
-# # Build the NestJS application
-# RUN npm run build
 
 # Expose the port the app runs on
 EXPOSE 3000
 
 # Start the NestJS application
-CMD ["npm", "run", "start:prod"]
+CMD ["npm", "run", "start:dev"]
