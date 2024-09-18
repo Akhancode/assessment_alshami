@@ -2,9 +2,12 @@ version: '3'
 
 services:
   nest-app:
-    build: .
+    build: 
+      context: .
+      dockerfile: Dockerfile
     ports:
-      - "3000:3000"
+      - "6903:6903"
+
     volumes:
       - ./src:/app/src
     restart: unless-stopped
