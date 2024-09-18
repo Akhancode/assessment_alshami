@@ -25,7 +25,7 @@ $ docker-compose up --build
 
 ## Goto React App served by Node js 
 
-check at [http://localhost:3000]
+check at [http://localhost:3000](http://localhost:3000)
 
 # Option 2 (building docker image locally and run )
 
